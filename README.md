@@ -40,8 +40,9 @@ This project implements a snooker score counting system using the YOLOv8 object 
 ## Setup Instructions
 
 ### Clone the Repository
-[Add the cloning command here if applicable, e.g., `git clone <repository-url>`]
-
+```bash
+git clone https://github.com/Ammar-Ali234/Score_Counting_in_Snooker.git
+```
 ### Install Dependencies
 Install the required Python libraries using pip:
 
@@ -74,3 +75,23 @@ python count.py
 - If balls move too quickly, detection may miss some frames. You can slow down the video playback by increasing the delay in cv2.waitKey().
 ### 2- Model Compatibility
 - Ensure the YOLOv8 model is trained to detect snooker balls with the correct class names.
+
+## Example
+### 1- User Interaction
+- The user clicks two points on the video to draw a line.
+- Example: A horizontal line across the table.
+### 2- Detection and Scoring
+- A red ball crosses the line → Score: 1
+- A black ball crosses the line → Score: 7
+- The program displays:
+- "Potted: Red" or "Potted: Black"
+- "Score: 8" (cumulative score)
+### 3- Output Video
+- The video shows bounding boxes, the line, and the score.
+
+### Contact
+##### For any questions or issues, please contact:
+
+##### Email: [mammarali299@gmail.com]
+##### GitHub: [https://github.com/Ammar-Ali234]
+##### Linkedin: [www.linkedin.com/in/mammarali]
