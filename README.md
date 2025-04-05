@@ -57,13 +57,20 @@ pip install opencv-python ultralytics
 - Place the video file (sn.mp4 or whatever name) in the project directory.
 
 ## How to Run
-### Run the script:
+### 1- Run the script:
 ```bash
 python count.py
 ```
 
-### Follow the on-screen instructions:
+### 2- Follow the on-screen instructions:
 - Click two points on the video frame to draw a line.
 - Once the line is drawn, the program will start detecting balls and calculating the score.
 - Press q to quit the program at any time.
-- The processed video will be saved as output.mp4 in the project directory.
+
+### 3- The processed video will be saved as output.mp4 in the project directory.
+
+## Known Issues
+### 1- Fast-Moving Objects
+- If balls move too quickly, detection may miss some frames. You can slow down the video playback by increasing the delay in cv2.waitKey().
+### 2- Model Compatibility
+- Ensure the YOLOv8 model is trained to detect snooker balls with the correct class names.
